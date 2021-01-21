@@ -1,7 +1,7 @@
 //1.
-function kilometerToMeter(kilo){
+function kiloMeterToMeter(kilo){
     var meter = kilo*1000;
     return meter;
 }
-var convert = kilometerToMeter(12);
+var convert = kiloMeterToMeter(12);
 console.warn(convert);
