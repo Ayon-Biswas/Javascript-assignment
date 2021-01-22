@@ -1,10 +1,28 @@
 //1.
-// function kilometerToMeter(kilo){
-//     var meter = kilo*1000;
-//     return meter;
-// }
-// var convert = kilometerToMeter(12);
-// console.warn(convert);
+function kilometerToMeter(kilo){
+    var meter = kilo*1000;
+    return meter;
+}
+var convert = kilometerToMeter(12);
+console.warn(convert);
+
+//3.
+function hotelCost(number){
+    if(number<=10){
+    var cost = number * 100;
+    return cost;
+    }
+    else if(number>10 && number<=20){
+    var cost2 = ((number-10) * 80) + (10 * 100);
+    return cost2;
+    }
+    else{
+    var cost3 = ((number - 20) * 50) + (10 * 80) + (10 * 100);
+    return cost3;
+    }
+}   
+    var result = hotelCost(25);
+    console.log(result);
 
 //4.
 var friends = ["arindom", "rudra", "shuvo","sumaiya","ayon"];
