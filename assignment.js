@@ -38,16 +38,18 @@ function hotelCost(number){
     console.log(result);
 
 //4.
-var friends = ["arindom", "rudra", "shuvo","sumaiya","ayon"];
-function megaFriend (friends){
- var name = friends[0];
- for(var i = 0; i<friends.length;i++){
- var element = friends[i];
- if(element > name){
-    name = element;
- }
- }
-return name;
-}
-var result = megaFriend(name);
-console.warn(result);
+function megaFriend(name)
+    {
+        var max_string = name[0].length;
+        var max = name[0];
+        for (var i = 1; i < name.length; i++) {
+            var element = name[i].length;
+            if (element > max_string) {
+                max = name[i];
+                max_string = element;
+        }
+    }
+        return max;
+      }
+var result = megaFriend(["rahim", "abul", "must", "karim"]);
+console.log(result);
